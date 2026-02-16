@@ -561,6 +561,10 @@ img { max-width: 100%; display: block; }
   color: #166534;
   font-size: 14px;
 }
+.form-status a {
+  text-decoration: underline;
+  font-weight: 600;
+}
 .contact-form label {
   display: grid;
   gap: 8px;

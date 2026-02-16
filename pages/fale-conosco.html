@@ -79,6 +79,8 @@
           <label for="mensagem">Mensagem*</label>
           <textarea id="mensagem" name="mensagem" required></textarea>
 
+          <p id="localModeHint" class="form-status" hidden>Você abriu esta página como arquivo local. Para enviar, acesse a versão web: <a href="https://smart-home-mota.github.io/smart-home/pages/fale-conosco.html" target="_blank" rel="noopener">abrir formulário online</a>.</p>
+
           <button class="cta" type="submit">Enviar</button>
         </form>
       </div>
@@ -96,6 +98,23 @@
       if (params.get('enviado') === '1') {
         status.hidden = false;
       }
+    })();
+
+    (function () {
+      var form = document.querySelector('.contact-form');
+      var localHint = document.getElementById('localModeHint');
+      if (!form || !localHint) return;
+
+      var isLocalFile = window.location.protocol === 'file:';
+      if (isLocalFile) {
+        localHint.hidden = false;
+      }
+
+      form.addEventListener('submit', function (event) {
+        if (!isLocalFile) return;
+        event.preventDefault();
+        alert('Envio bloqueado em arquivo local. Abra o formulário pela versão online do site.');
+      });
     })();
 
     (function () {
