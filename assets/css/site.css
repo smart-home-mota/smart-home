@@ -552,6 +552,15 @@ img { max-width: 100%; display: block; }
   display: grid;
   gap: 16px;
 }
+.form-status {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #ecfdf3;
+  border: 1px solid #86efac;
+  color: #166534;
+  font-size: 14px;
+}
 .contact-form label {
   display: grid;
   gap: 8px;
