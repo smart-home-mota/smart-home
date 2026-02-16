@@ -1,0 +1,200 @@
+================================================================================
+GUIA PASSO A PASSO: SUBIR PROJETO PARA GITHUB
+================================================================================
+
+PROJETO: Casa Inteligente Engemota
+ORGANIZAÇÃO: smart-home-mota
+DATA: 10 de Fevereiro de 2026
+
+================================================================================
+PRÉ-REQUISITOS
+================================================================================
+
+1. Git instalado no seu computador
+   - Download: https://git-scm.com/download/win
+   - Verifique a instalação: abra PowerShell/CMD e digite: git --version
+
+2. Conta no GitHub
+   - Acesse: https://github.com
+   - Criar conta se ainda não tiver
+
+3. Organização criada no GitHub
+   - Organização: smart-home-mota
+   - URL: https://github.com/smart-home-mota
+
+================================================================================
+PASSO 1: PREPARAR O REPOSITÓRIO LOCAL
+================================================================================
+
+1. Abra PowerShell ou CMD
+2. Navegue até a pasta do projeto:
+   cd C:\xampp\htdocs\casa-inteligente
+
+3. Inicialize o Git (executar apenas uma vez):
+   git init
+
+4. Configure seu nome e email do GitHub:
+   git config --global user.name "Seu Nome"
+   git config --global user.email "seu.email@github.com"
+
+5. Adicione todos os arquivos:
+   git add .
+
+6. Faça o commit inicial:
+   git commit -m "Inicial: Site Casa Inteligente Engemota com layout moderno"
+
+================================================================================
+PASSO 2: CRIAR REPOSITÓRIO NO GITHUB
+================================================================================
+
+1. Acesse: https://github.com/smart-home-mota/
+2. Clique em "New" (botão verde)
+3. Preencha os dados:
+   - Repository name: casa-inteligente (ou casa-inteligente-engemota)
+   - Description: Site de apresentação da Casa Inteligente Engemota
+   - Visibility: Public (para ser acessível)
+   - NÃO marque "Initialize this repository with a README"
+
+4. Clique em "Create repository"
+
+5. Copie a URL do repositório (similar a):
+   https://github.com/smart-home-mota/casa-inteligente.git
+
+================================================================================
+PASSO 3: CONECTAR REPOSITÓRIO LOCAL AO GITHUB
+================================================================================
+
+1. No PowerShell/CMD, na pasta do projeto, execute:
+   git remote add origin https://github.com/smart-home-mota/casa-inteligente.git
+
+2. (Opcional) Renomeie a branch principal para "main":
+   git branch -M main
+
+3. Faça o push (envio) para o GitHub:
+   git push -u origin main
+
+   Ele pedirá suas credenciais do GitHub:
+   - Username: seu usuário do GitHub
+   - Password: seu token pessoal (não a senha)
+   
+   Para gerar um token:
+   - Acesse: https://github.com/settings/tokens
+   - Clique em "Generate new token"
+   - Selecione "repo" (acesso completo a repositórios)
+   - Copie o token e cole no prompt quando solicitado
+
+================================================================================
+PASSO 4: VERIFICAR UPLOAD
+================================================================================
+
+1. Acesse: https://github.com/smart-home-mota/casa-inteligente
+2. Verifique se todos os arquivos estão lá:
+   - index.php
+   - Logo_engemota.jpg
+   - Sala.jpg
+   - Cozinha.jpg
+   - Todas as outras imagens
+   - Pasta laravel-master/
+   - Este arquivo (GITHUB_SETUP.txt)
+
+================================================================================
+PASSO 5: ATIVAR GITHUB PAGES (OPCIONAL - para publicar na web)
+================================================================================
+
+Se quiser publicar o site diretamente pelo GitHub:
+
+1. Acesse: https://github.com/smart-home-mota/casa-inteligente
+2. Vá em "Settings" (engrenagem)
+3. No menu esquerdo, procure por "Pages"
+4. Em "Source", selecione "main branch"
+5. Clique em "Save"
+
+O site estará disponível em:
+   https://smart-home-mota.github.io/casa-inteligente/
+
+Aguarde 2-3 minutos para o site ficar online.
+
+================================================================================
+PASSO 6: PRÓXIMAS ATUALIZAÇÕES
+================================================================================
+
+Sempre que fizer mudanças no projeto:
+
+1. Na pasta do projeto, execute:
+   git add .
+
+2. Faça o commit:
+   git commit -m "Descrição da mudança (ex: Atualizar cores, Adicionar seção de contato)"
+
+3. Faça o push:
+   git push
+
+Exemplo de boas mensagens de commit:
+- "Atualizar cores da seção hero"
+- "Adicionar images de ambientes"
+- "Melhorar responsividade mobile"
+- "Ajustar textos e copywriting"
+
+================================================================================
+ENDEREÇOS FINAIS
+================================================================================
+
+1. ACESSAR O PROJETO NO GITHUB:
+   https://github.com/smart-home-mota/casa-inteligente
+
+2. ACESSAR O SITE PUBLICADO (após ativar Pages):
+   https://smart-home-mota.github.io/casa-inteligente/
+
+3. ACESSAR LOCALMENTE (via XAMPP):
+   http://localhost/casa-inteligente/index.php
+   ou
+   http://localhost/casa-inteligente/
+
+================================================================================
+DÚVIDAS COMUNS
+================================================================================
+
+P: Esqueci de configurar o Git globalmente. O que fazer?
+R: Execute novamente:
+   git config --global user.name "Seu Nome"
+   git config --global user.email "seu.email@github.com"
+
+P: Recebi erro na senha do GitHub?
+R: Use token pessoal, não a senha. Gere em:
+   https://github.com/settings/tokens
+
+P: Como saber o status do repositório?
+R: Execute: git status
+
+P: Como ver histórico de commits?
+R: Execute: git log
+
+P: Esqueci de adicionar um arquivo. Como corrigir?
+R: git add arquivo.extensão
+   git commit -m "Adicionar arquivo faltante"
+   git push
+
+================================================================================
+ATALHO RÁPIDO (Copie e Cole)
+================================================================================
+
+cd C:\xampp\htdocs\casa-inteligente
+git init
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@github.com"
+git add .
+git commit -m "Inicial: Site Casa Inteligente Engemota"
+git branch -M main
+git remote add origin https://github.com/smart-home-mota/casa-inteligente.git
+git push -u origin main
+
+================================================================================
+FIM DO GUIA
+================================================================================
+
+Para suporte adicional, consulte:
+- Documentação oficial do Git: https://git-scm.com/doc
+- GitHub Help: https://docs.github.com
+- GitHub Pages: https://pages.github.com
+
+Sucesso no deploy!

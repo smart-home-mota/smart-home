@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambientes - Engemota</title>
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/images/Logo_engemota.jpg" alt="Logo Engemota">
+        <span>Engemota</span>
+      </a>
+      <nav class="menu">
+        <a href="solucoes.html">Soluções</a>
+        <a class="active" href="ambientes.html">Ambientes</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="como-funciona.html">Como funciona</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="fale-conosco.html">Fale conosco</a>
+      </nav>
+      <a class="cta" href="fale-conosco.html">Fale conosco</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-title">
+        <div>
+          <span>ambientes</span>
+          <h2>Espaços com atmosfera e performance</h2>
+        </div>
+        <a class="cta" href="fale-conosco.html">Solicitar projeto</a>
+      </div>
+      <div class="gallery">
+        <figure class="fade-up">
+          <img src="../assets/images/casa_inteligente.jpg" alt="Casa inteligente">
+          <figcaption>Residencial</figcaption>
+        </figure>
+        <figure class="fade-up delay-1">
+          <img src="../assets/images/Sala.jpg" alt="Sala inteligente">
+          <figcaption>Sala</figcaption>
+        </figure>
+        <figure class="fade-up delay-2">
+          <img src="../assets/images/Cozinha.jpg" alt="Cozinha inteligente">
+          <figcaption>Cozinha</figcaption>
+        </figure>
+      </div>
+
+      <div class="ambiente-video fade-up">
+        <h3>Entrada</h3>
+        <video controls preload="metadata" poster="../assets/images/Sala.jpg">
+          <source src="../assets/video/porta01.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="ambiente-3d-section fade-up">
+        <div class="section-title">
+          <div>
+            <span>ambiente 3d</span>
+            <h2>Explore o cômodo com arrastar do mouse</h2>
+          </div>
+        </div>
+        <div class="panorama-toolbar" role="tablist" aria-label="Seleção de cômodos">
+          <button class="room-chip active" data-room="Entrada" data-src="../assets/images/Ambiente 3D.jpg" type="button">Entrada</button>
+          <button class="room-chip" data-room="Sala de estar" data-src="../assets/images/2_Ambiente 3D.jpg" type="button">Sala de estar</button>
+          <button class="room-chip" data-room="Cozinha" data-src="../assets/images/3_Ambiente 3D.jpg" type="button">Cozinha</button>
+          <button class="room-chip" data-room="Suíte" data-src="../assets/images/4_Ambiente 3D.jpg" type="button">Suíte</button>
+          <button class="room-chip" data-room="Quarto" data-src="../assets/images/5_Ambiente 3D.jpg" type="button">Quarto</button>
+          <button class="room-chip" data-room="Banheiro" data-src="../assets/images/6_Ambiente 3D.jpg" type="button">Banheiro</button>
+          <button class="room-chip" data-room="Área gourmet" data-src="../assets/images/7_Ambiente 3D.jpg" type="button">Área gourmet</button>
+          <button class="room-chip" data-room="Home office" data-src="../assets/images/8_Ambiente 3D.jpg" type="button">Home office</button>
+        </div>
+        <p class="panorama-room">Cômodo atual: <strong id="currentRoom">Entrada</strong></p>
+        <div class="panorama-viewer" id="panoramaViewer" aria-label="Ambiente interativo 3D">
+          <img id="panoramaImage" src="../assets/images/Ambiente 3D.jpg" alt="Ambiente 3D interativo" draggable="false">
+        </div>
+        <p class="panorama-help">Clique e segure para navegar pelo ambiente, como em mapas interativos.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Engemota - Automação residencial, projetos elétricos e soluções inteligentes.
+  </footer>
+  <script src="../assets/js/ambiente-3d.js"></script>
+</body>
+</html>

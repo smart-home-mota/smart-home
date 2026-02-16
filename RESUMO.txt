@@ -1,0 +1,343 @@
+================================================================================
+PROJETO: CASA INTELIGENTE ENGEMOTA
+RESUMO E DOCUMENTAÇÃO PARA CONSULTAS FUTURAS
+================================================================================
+Data: 10 de Fevereiro de 2026
+Versão: 1.0
+
+================================================================================
+1. RESUMO DO PROJETO
+================================================================================
+
+Nome: Casa Inteligente Engemota
+Descrição: Site de apresentação (Landing Page) responsivo para a empresa Engemota,
+           especializada em projetos de automação residencial e serviços elétricos.
+
+Objetivo: Apresentar soluções de casa inteligente, ambientes, processo e contato
+          de forma moderna e interativa.
+
+Stack: HTML5 + CSS3 (sem frameworks, código puro)
+Responsividade: Mobile-first, otimizado para desktop e mobile
+
+================================================================================
+2. ESTRUTURA DE ARQUIVOS
+================================================================================
+
+C:\xampp\htdocs\casa-inteligente\
+├── index.php (versão PHP, use para XAMPP)
+├── index.html (versão HTML, use para GitHub Pages)
+├── GITHUB_SETUP.txt (guia de publicação no GitHub)
+├── RESUMO.txt (este arquivo)
+├── Logo_engemota.jpg
+├── Sala.jpg
+├── Cozinha.jpg
+├── casa_inteligente.jpg
+├── controle_total.jpg
+├── controle_onde_desejar.jpg
+├── todas_as_partes.jpg
+├── projetos.jpg
+├── servicos_prestados.jpg
+├── missao.jpg
+├── visao.jpg
+├── valores.jpg
+└── laravel-master/ (pasta com estrutura Laravel, opcional)
+
+================================================================================
+3. SEÇÕES DO SITE
+================================================================================
+
+1. HEADER (Topbar - Sticky)
+   - Logo e marca "Engemota"
+   - Menu de navegação (Soluções, Ambientes, Como funciona, Quem somos)
+   - Botão CTA "Fale conosco"
+   
+2. HERO SECTION
+   - Imagem de fundo (Sala.jpg)
+   - Headline: "Controle total, conforto diario e energia inteligente."
+   - Descrição e 2 CTAs
+   - Card lateral com "Experiência conectada"
+
+3. SOLUÇÕES (Seção 1)
+   - 3 cards: Controle total, Controle onde desejar, Em todos os ambientes
+   - Imagens dos cards
+   - Descrição breve de cada solução
+
+4. INSIGHTS (Seção Editorial)
+   - Feature grande em destaque (escuro)
+   - 3 cards laterais com dicas (Iluminação, Segurança, Conforto)
+
+5. AMBIENTES (Seção Galeria)
+   - 3 imagens: Residencial, Sala, Cozinha
+   - Layout responsivo com títulos
+   - Efeito hover com zoom
+
+6. COMO FUNCIONA (Seção Processo)
+   - 3 etapas: Diagnóstico, Instalação, Treinamento
+   - Cards com informações do fluxo
+
+7. QUEM SOMOS
+   - Logo + texto sobre a empresa
+   - 3 parágrafos descritivos
+   - Posicionamento
+
+8. CONTATO (CTA Band)
+   - Bloco grande com chamado para ação
+   - Email + WhatsApp + Horário
+
+9. FOOTER
+   - Copyright e informações básicas
+
+================================================================================
+4. CORES E IDENTIDADE VISUAL
+================================================================================
+
+Paleta de cores:
+--ink:          #0f172a (preto/azul escuro)
+--slate:        #1f2937 (cinza escuro)
+--muted:        #6b7280 (cinza médio)
+--accent:       #f16a1b (laranja vibrante - cor principal)
+--accent-dark:  #e05308 (laranja escuro - hover)
+--teal:         #0f766e (verde azulado)
+--fog:          #f3f5f9 (cinza claro)
+--line:         #e5e7eb (cinza para bordas)
+
+Tipografia:
+- Fonte padrão: Space Grotesk (Google Fonts)
+- Fonte monospace: Space Mono (para labels/tags)
+- Fallback: Segoe UI, Tahoma, Arial
+
+Max-width: 1140px (containers centralizados)
+
+================================================================================
+5. COMO RODAR LOCALMENTE
+================================================================================
+
+Usando XAMPP:
+
+1. Certifique-se de ter Apache e PHP rodando
+   - Abra XAMPP Control Panel
+   - Clique em "Start" para Apache
+
+2. Acesse no navegador:
+   http://localhost/casa-inteligente/index.php
+   ou
+   http://localhost/casa-inteligente/
+
+3. Edite o arquivo index.php para fazer alterações (suporta PHP)
+
+Usando apenas HTML:
+
+1. Use o arquivo index.html (não requer servidor)
+2. Acesse no navegador:
+   http://localhost/casa-inteligente/index.html
+
+================================================================================
+6. COMO PUBLICAR NO GITHUB
+================================================================================
+
+Organização: smart-home-mota
+Repositório: casa-inteligente
+
+Passo 1: Preparar repositório local
+cd C:\xampp\htdocs\casa-inteligente
+git init
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@github.com"
+git add .
+git commit -m "Inicial: Site Casa Inteligente Engemota"
+
+Passo 2: Conectar ao GitHub
+git remote add origin https://github.com/smart-home-mota/casa-inteligente.git
+git branch -M main
+git push -u origin main
+
+Passo 3: Ativar GitHub Pages
+- Acesse: https://github.com/smart-home-mota/casa-inteligente
+- Settings → Pages
+- Source: main branch
+- Save
+- Aguarde 2-3 minutos
+
+Passo 4: Atualizações futuras
+git add .
+git commit -m "Descrição da mudança"
+git push
+
+================================================================================
+7. ENDEREÇOS ÚTEIS
+================================================================================
+
+🌐 WEB (GitHub Pages):
+   https://smart-home-mota.github.io/casa-inteligente/
+
+📧 REPOSITÓRIO (GitHub):
+   https://github.com/smart-home-mota/casa-inteligente
+
+💻 LOCALHOST (XAMPP):
+   http://localhost/casa-inteligente/index.php
+   http://localhost/casa-inteligente/index.html
+
+📋 ARQUIVO DE SETUP:
+   C:\xampp\htdocs\casa-inteligente\GITHUB_SETUP.txt
+
+================================================================================
+8. PERSONALIZAÇÕES FREQUENTES
+================================================================================
+
+1. ALTERAR CORES
+   - Edite :root { ... } no <style>
+   - Exemplo: --accent: #f16a1b; (mude para sua cor)
+
+2. ALTERAR TEXTOS
+   - Procure pela seção desejada no HTML body
+   - Altere o texto entre tags <h1>, <h2>, <p>, etc.
+
+3. TROCAR IMAGENS
+   - Coloque as novas imagens na pasta
+   - Edite os atributos src="imagem.jpg"
+
+4. ALTERAR LINKS EXTERNOS
+   - Menu: edite href="#secao"
+   - Email: edite contato@engemota.com.br
+   - WhatsApp: adicione link tel: ou WhatsApp API
+
+5. ADICIONAR NOVA SEÇÃO
+   - Copie um <section> existente
+   - Mude a classe, id e conteúdo
+   - Atualize o menu para incluir link
+
+================================================================================
+9. FUNCIONALIDADES CSS
+================================================================================
+
+✓ Gradientes de fundo
+✓ Animações fade-up (aparecem ao carregar)
+✓ Efeitos hover (cards levantam, links sublinham)
+✓ Backdrop filter (vidro transparente)
+✓ Grid responsivo
+✓ Media queries (mobile, tablet, desktop)
+✓ Flex layouts
+✓ Border radius arredondado
+✓ Box shadows sutis
+
+Sem JavaScript (código puro de estilo)
+
+================================================================================
+10. OTIMIZAÇÕES IMPLEMENTADAS
+================================================================================
+
+✓ Meta tags (charset, viewport para mobile)
+✓ Imagens otimizadas (.jpg)
+✓ CSS inline (carrega rápido)
+✓ Fontes do Google (importadas no CSS)
+✓ Estrutura semântica (HTML5)
+✓ Accessibility (alt texts nas imagens)
+✓ Mobile-first design
+✓ Sticky header para melhor UX
+
+================================================================================
+11. PRÓXIMOS PASSOS / MELHORIAS
+================================================================================
+
+Curto prazo:
+□ Adicionar animações JavaScript (scroll, interações)
+□ Integrar formulário de contato funcional
+□ Adicionar WhatsApp link real
+□ Email realmente funcional (PHP ou Formspree)
+□ Mais imagens de ambientes/casos
+
+Médio prazo:
+□ Blog/Insights com artigos
+□ Seção de cases/depoimentos
+□ Integrar Google Analytics
+□ Otimizar SEO (meta tags, schema)
+□ Versão em inglês
+□ Dark mode toggle
+
+Longo prazo:
+□ Sistema de agendamento online
+□ Calculadora de projeto
+□ Integração com CRM
+□ App mobile
+□ Sistema de admin para gerenciar conteúdo
+
+================================================================================
+12. DÚVIDAS FREQUENTES
+================================================================================
+
+P: O site não abre no GitHub Pages?
+R: Aguarde 2-3 minutos após ativar em Settings → Pages.
+   Verifique se está usando index.html (não .php)
+
+P: As imagens não aparecem?
+R: Certifique-se de que os arquivos .jpg estão na mesma pasta.
+   Verifique os nomes (case-sensitive em Linux/GitHub).
+
+P: Como adicionar um novo link de menu?
+R: Edite <nav class="menu"> e adicione:
+   <a href="#sua-secao">Seu Link</a>
+   Use id="" na seção correspondente.
+
+P: Como mudar a fonte?
+R: No CSS, altere a linha:
+   @import url("link-da-fonte");
+   E atualize: font-family: "Nova Fonte", fallback;
+
+P: Precisar de SSL/HTTPS?
+R: GitHub Pages já fornece automaticamente.
+
+P: Como fazer formulário funcional?
+R: Use Formspree.io ou integre PHP no XAMPP.
+   Para .html estático, use: https://formspree.io
+
+================================================================================
+13. CHECKLIST FINAL
+================================================================================
+
+Antes de publicar definitivamente:
+☑ Testar no navegador (Chrome, Firefox, Safari, Edge)
+☑ Verificar responsividade (mobile, tablet, desktop)
+☑ Testar todos os links internos e externos
+☑ Verificar ortografia e acentuação
+☑ Otimizar imagens (tamanho)
+☑ Verificar loading (DevTools → Lighthouse)
+☑ Testar em conexão lenta (3G)
+☑ Adicionar meta description para SEO
+☑ Revisar cores e contraste (acessibilidade)
+☑ Confirmar informações de contato (email, WhatsApp)
+
+================================================================================
+14. CONTATOS E INFORMAÇÕES
+================================================================================
+
+Empresa: ENGEMOTA
+Email: contato@engemota.com.br
+WhatsApp: (00) 00000-0000 [SUBSTITUIR]
+Horário: Seg a Sex, 08h-18h
+
+GitHub Org: https://github.com/smart-home-mota
+
+================================================================================
+15. HISTÓRICO DE MUDANÇAS
+================================================================================
+
+v1.0 - 10/02/2026
+- Criação inicial do site
+- 8 seções principais
+- Layout responsivo
+- Publicação no GitHub Pages
+- Documentação completa
+
+================================================================================
+FIM DO RESUMO
+================================================================================
+
+Para mais detalhes técnicos, consulte:
+- GITHUB_SETUP.txt (para publicação)
+- index.html (código-fonte)
+- Google Fonts: https://fonts.google.com
+- GitHub Pages: https://pages.github.com
+- Acessibilidade: https://www.w3.org/WAI
+
+Última atualização: 10 de Fevereiro de 2026
+Mantido por: Equipe Engemota
