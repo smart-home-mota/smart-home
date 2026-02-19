@@ -23,7 +23,9 @@ include __DIR__ . '/../partials/header.php';
           <h4>Email</h4>
           <p>
             contato@engemotasmart.com.br<br>
-            caio@engemotasmart.com.br
+            caio@engemotasmart.com.br<br>
+            arlen@engemotasmart.com.br<br>
+            adilson@engemotasmart.com.br
           </p>
         </div>
         <div class="contact-block">
