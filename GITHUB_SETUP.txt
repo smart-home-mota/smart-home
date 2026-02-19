@@ -110,7 +110,7 @@ Se quiser publicar o site diretamente pelo GitHub:
 5. Clique em "Save"
 
 O site estará disponível em:
-   https://smart-home-mota.github.io/casa-inteligente/
+   https://www.engemotasmart.com.br/
 
 Aguarde 2-3 minutos para o site ficar online.
 
@@ -143,7 +143,7 @@ ENDEREÇOS FINAIS
    https://github.com/smart-home-mota/casa-inteligente
 
 2. ACESSAR O SITE PUBLICADO (após ativar Pages):
-   https://smart-home-mota.github.io/casa-inteligente/
+   https://www.engemotasmart.com.br/
 
 3. ACESSAR LOCALMENTE (via XAMPP):
    http://localhost/casa-inteligente/index.php

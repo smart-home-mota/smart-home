@@ -168,7 +168,7 @@ git push
 ================================================================================
 
 🌐 WEB (GitHub Pages):
-   https://smart-home-mota.github.io/casa-inteligente/
+   https://www.engemotasmart.com.br/
 
 📧 REPOSITÓRIO (GitHub):
    https://github.com/smart-home-mota/casa-inteligente
@@ -198,7 +198,7 @@ git push
 
 4. ALTERAR LINKS EXTERNOS
    - Menu: edite href="#secao"
-   - Email: edite contato@engemota.com.br
+   - Email: edite contato@engemotasmart.com.br
    - WhatsApp: adicione link tel: ou WhatsApp API
 
 5. ADICIONAR NOVA SEÇÃO
@@ -311,7 +311,7 @@ Antes de publicar definitivamente:
 ================================================================================
 
 Empresa: ENGEMOTA
-Email: contato@engemota.com.br
+Email: contato@engemotasmart.com.br
 WhatsApp: (00) 00000-0000 [SUBSTITUIR]
 Horário: Seg a Sex, 08h-18h
 

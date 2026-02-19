@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Mantém o ambiente local funcionando sem redirecionamento
+RewriteCond %{HTTP_HOST} !^localhost$ [NC]
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1$ [NC]
+
+# Força domínio canônico e HTTPS
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.engemotasmart\.com\.br$ [NC]
+RewriteRule ^ https://www.engemotasmart.com.br%{REQUEST_URI} [R=301,L,NE]
